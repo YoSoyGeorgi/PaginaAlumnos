@@ -33,11 +33,11 @@
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" CssClass="form-control" placeholder="Usuario" ID="tbUsuario"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" placeholder="Usuario" required="required" ID="tbUsuario"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" CssClass="form-control" placeholder="Contraseña" ID="tbpass"></asp:TextBox>
+                <asp:TextBox runat="server" type="password" CssClass="form-control" placeholder="Contraseña" required="required" ID="tbpass"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
