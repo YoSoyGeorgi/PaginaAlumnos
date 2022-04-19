@@ -15,7 +15,49 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="MP" runat="server">
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <nav class="navbar navbar-defaul">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <asp:Image runat="server" Height="40" src="../images/logo ITQ original.png" />
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Historial</a></li>
+                </ul>
+                <div>
+                    <asp:Label runat="server" ID="lblUser"></asp:Label>
+                </div>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toogle="dropdown" aria-expanded="false">
+                        <asp:Image runat="server" ID="usuario" Width="50" height="50" CssClass="rounded-circle img-thumbnail" />
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownuser">
+                        <li>
+                            <button class="dropdown-item">Perfil</button>
+                        </li>
+                        <li>
+                            <asp:button runat="server" Text="Perfil1" class="dropdown-item" />
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <asp:Button runat="server" class="dropdown-item" Text="Cerrar sesión"></asp:Button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        </header>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
