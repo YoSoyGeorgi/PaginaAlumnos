@@ -33,7 +33,7 @@
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" CssClass="form-control" placeholder="Usuario" required="required" ID="tbUsuario"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" placeholder="Número De Control" required="required" ID="tbnumcon"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
@@ -49,7 +49,7 @@
                 <asp:Label runat="server" ID="lblError" class="alert-danger"></asp:Label>
                 <br />
                 <asp:Label runat="server" Text="¿No tienes una cuenta? Registrate"></asp:Label>
-                <asp:LinkButton runat="server" Text="aqui"></asp:LinkButton>
+                <asp:LinkButton runat="server" Text="aqui" OnClick="Registrarse"></asp:LinkButton>
             </div>
         </div>
     </form>

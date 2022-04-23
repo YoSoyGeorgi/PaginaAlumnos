@@ -19,7 +19,7 @@
                         <asp:Label runat="server" CssClass="row justify-content-center h3">Registro</asp:Label>
                     </div>
                     <fieldset>
-                        <legend class="row justify-content-center">Datos personales</legend>
+                        <legend class="row justify-content-center"> Datos personales</legend>
                         <div class="input-group">
                             <asp:Label ID="label1" CssClass="form-control" runat="server" Text="Nombre:"></asp:Label>
                             <asp:TextBox ID="tbNombre" CssClass="form-control" runat="server" placeholder="Nombre"></asp:TextBox>
@@ -59,7 +59,7 @@
                         <br/>
                         <div class="input-group">
                             <asp:Label ID="label6" CssClass="form-control" runat="server" Text="Contraseña:"></asp:Label>
-                            <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
+                            <asp:TextBox ID="tbcont" CssClass="form-control" runat="server" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
                         </div>
                         <br/>
                         <div class="input-group">
@@ -71,9 +71,9 @@
                     <asp:Label runat="server" CssClass="alert-danger" ID="lblerror"></asp:Label>
                     <br/>
                     <div class="row">
-                        <asp:Button runat="server" CssClass="form-control btn btn-success" BackColor="#EC8013" BorderColor="#EC8013" Text="Completar Registro" />
+                        <asp:Button runat="server" CssClass="form-control btn btn-success" BackColor="#EC8013" BorderColor="#EC8013" Text="Completar Registro" OnClick="Registrar"/>
                         <hr />
-                        <asp:Button runat="server" CssClass="form-control btn btn-warning" BackColor="#EC8013" BorderColor="#EC8013" Text="Cancelar" />
+                        <asp:Button runat="server" CssClass="form-control btn btn-warning" BackColor="#EC8013" BorderColor="#EC8013" Text="Cancelar" OnClick="Cancelar" />
                     </div>
                 </div>
             </div>

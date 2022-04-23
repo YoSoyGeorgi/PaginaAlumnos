@@ -15,13 +15,13 @@ namespace PaginaAlumnos.Sources.pages
     {
 
         /// <summary>
-        /// Control tbUsuario.
+        /// Control tbnumcon.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuario;
+        protected global::System.Web.UI.WebControls.TextBox tbnumcon;
 
         /// <summary>
         /// Control tbpass.

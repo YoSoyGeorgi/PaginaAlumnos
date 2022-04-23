@@ -13,5 +13,10 @@ namespace PaginaAlumnos.Sources.pages
         {
 
         }
+
+        protected void Registrarse(object sender, EventArgs e)
+        {
+            Response.Redirect("/Sources/pages/Registro.aspx");
+        }
     }
 }
