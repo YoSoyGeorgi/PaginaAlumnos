@@ -42,7 +42,7 @@
                         <br/>
                         <div class="input-group">
                             <asp:Label ID="label5" CssClass="form-control" runat="server" Text="Carrera:"></asp:Label>
-                            <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:DropDownList ID="ListaCarreras" runat="server">
                                 <asp:ListItem align="center">Seleccione</asp:ListItem>
                                 <asp:ListItem>Ing. Sistemas Computacionales</asp:ListItem>
                                 <asp:ListItem>Ing. Mecatronica</asp:ListItem>
