@@ -64,7 +64,7 @@
                         <br/>
                         <div class="input-group">
                             <asp:Label ID="label7" CssClass="form-control" runat="server" Text="Repetir contraseña:"></asp:Label>
-                            <asp:TextBox ID="TextBox2" CssClass="form-control" runat="server" TextMode="Password" placeholder="Repetir contraseña"></asp:TextBox>
+                            <asp:TextBox ID="tbrepc" CssClass="form-control" runat="server" TextMode="Password" placeholder="Repetir contraseña"></asp:TextBox>
                         </div>
                     </fieldset>
                     <br/>

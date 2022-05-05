@@ -31,8 +31,8 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Historial</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Perfil</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Cerrar Sesión</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" onclick="Perfil">Perfil</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" onclick="CS">Cerrar Sesión</a></li>
                 </ul>
                 <div>
                     <asp:Label runat="server" ID="lblUser"></asp:Label>
