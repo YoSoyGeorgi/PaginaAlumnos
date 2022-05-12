@@ -69,45 +69,46 @@
   <ItemGroup>
     <Content Include="Sources\Css\Estilo.css" />
     <Content Include="Sources\images\logo ITQ original.png" />
-    <Content Include="Sources\pages\index.aspx" />
-    <Content Include="Sources\pages\Login.aspx" />
-    <Content Include="Sources\pages\Registro.aspx" />
+    <Content Include="Sources\Pages\index.aspx" />
+    <Content Include="Sources\Pages\Login.aspx" />
+    <Content Include="Sources\Pages\Registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sources\pages\index.aspx.cs">
+    <Compile Include="Sources\Pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\pages\index.aspx.designer.cs">
+    <Compile Include="Sources\Pages\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\pages\Login.aspx.cs">
+    <Compile Include="Sources\Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\pages\Login.aspx.designer.cs">
+    <Compile Include="Sources\Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\pages\Registro.aspx.cs">
+    <Compile Include="Sources\Pages\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\pages\Registro.aspx.designer.cs">
+    <Compile Include="Sources\Pages\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\pages\webmaster.Master.cs">
+    <Compile Include="Sources\Pages\webmaster.Master.cs">
       <DependentUpon>webmaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Sources\pages\webmaster.Master.designer.cs">
+    <Compile Include="Sources\Pages\webmaster.Master.designer.cs">
       <DependentUpon>webmaster.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Sources\pages\webmaster.Master" />
+    <Content Include="Sources\Pages\webmaster.Master" />
+    <None Include="Properties\PublishProfiles\PaginaAlumnos20220511195008 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
