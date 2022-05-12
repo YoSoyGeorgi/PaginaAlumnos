@@ -21,7 +21,7 @@ namespace PaginaAlumnos.Sources.pages
 
         protected void Registrarse(object sender, EventArgs e)
         {
-            Response.Redirect("/Sources/pages/Registro.aspx");
+            Response.Redirect("/Sources/Pages/Registro.aspx");
         }
 
         protected void Iniciar_Click(object sender, EventArgs e)
@@ -43,10 +43,10 @@ namespace PaginaAlumnos.Sources.pages
                         cmd.Parameters.Add("@Patron", SqlDbType.VarChar).Value = patron;
                         con.Open();
                         SqlDataReader dr = cmd.ExecuteReader();
-                        if(dr.Read())
+                        if (dr.Read())
                         {
-                            Session["userloged"] = dr["id"].ToString();
-                            Response.Redirect("/Source/pages/index.aspx");
+                            Session["UsuarioIngresado"] = dr["Id"].ToString();
+                            Response.Redirect("index.aspx");
                         }
                         else
                         {
@@ -57,6 +57,6 @@ namespace PaginaAlumnos.Sources.pages
                 }
             }
         }
-            
+
     }
 }

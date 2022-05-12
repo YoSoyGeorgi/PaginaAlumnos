@@ -29,13 +29,13 @@
                     </div>
                 </nav>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Historial</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white" onclick="Perfil">Perfil</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white" onclick="CS">Cerrar Sesión</a></li>
+                    <li><asp:Button runat="server" Class="form-control btn btn-succes text-white" BackColor="Black" BorderColor="Black" onclick="Inicio" Text="Inicio" BorderStyle="None"/></li>
+                    <li><asp:Button runat="server" Class="form-control btn btn-succes text-white" BackColor="Black" BorderColor="Black" onclick="Historial" Text="Historial" BorderStyle="None"/></li>
+                    <li><asp:Button runat="server" Class="form-control btn btn-succes text-white" BackColor="Black" BorderColor="Black" onclick="Perfil" Text="Perfil" BorderStyle="None"/></li>
+                    <li><asp:Button runat="server" Class="form-control btn btn-succes text-white" BackColor="Black" BorderColor="Black" onclick="CS" Text="Cerrar Sesión" BorderStyle="None"/></li>
                 </ul>
                 <div>
-                    <asp:Label runat="server" ID="lblUser"></asp:Label>
+                    <asp:Label class="nav-link px-2 text-white" runat="server" ID="lblUser"></asp:Label>
                 </div>
             </div>
             

@@ -33,15 +33,15 @@
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" CssClass="form-control" placeholder="Número De Control" ID="tbnumcon"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" placeholder="Número De Control" required="required" ID="tbnumcon"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" type="password" CssClass="form-control" placeholder="Contraseña" ID="tbpass"></asp:TextBox>
+                <asp:TextBox runat="server" type="password" CssClass="form-control" placeholder="Contraseña" required="required" ID="tbpass"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">
-                <asp:Button runat="server" CssClass="form-control btn btn-succes" BackColor="#EC8013" BorderColor="#EC8013" ID="Iniciar" Text="Iniciar Sesión" OnClick="Iniciar_Click" />
+                <asp:Button runat="server" CssClass="form-control btn btn-succes" BackColor="#EC8013" BorderColor="#EC8013" OnClick="Iniciar_Click" Text="Iniciar Sesión" />
             </div>
             <br />
             <br />
