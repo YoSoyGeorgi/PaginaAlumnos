@@ -68,14 +68,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Sources\Css\Estilo.css" />
-    <Content Include="Sources\images\logo ITQ original.png" />
+    <Content Include="Sources\Pages\Historial.aspx" />
     <Content Include="Sources\Pages\index.aspx" />
     <Content Include="Sources\Pages\Login.aspx" />
+    <Content Include="Sources\Pages\perfil.aspx" />
     <Content Include="Sources\Pages\Registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\Pages\Historial.aspx.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\Pages\Historial.aspx.designer.cs">
+      <DependentUpon>Historial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sources\Pages\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +97,13 @@
     </Compile>
     <Compile Include="Sources\Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Pages\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sources\Pages\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sources\Pages\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
@@ -117,6 +132,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Sources\images\" />
     <Folder Include="Sources\javascript\" />
   </ItemGroup>
   <PropertyGroup>

@@ -39,7 +39,7 @@ namespace PaginaAlumnos.Sources.pages
             usuario.Parameters.Add("@usuario", SqlDbType.VarChar).Value = tbnum.Text;
             int user = Convert.ToInt32(usuario.ExecuteScalar());
 
-            if (tbNombre.Text == "" || tbapp.Text == "" || tbnum.Text == "" || tbemail.Text == "" || ListaCarreras.SelectedValue == "")
+            if (tbNombre.Text == "" || tbapp.Text == "" || tbnum.Text == "" || tbemail.Text == "")
             {
                 lblerror.Text = "Los campos no pueden quedarse vacios, por favor verifica tu registro";
             }
@@ -75,7 +75,6 @@ namespace PaginaAlumnos.Sources.pages
                         cmd.Parameters.Add("@Apellidos", SqlDbType.VarChar).Value = tbapp.Text;
                         cmd.Parameters.Add("@Num_control", SqlDbType.Char).Value = tbnum.Text;
                         cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = tbemail.Text;
-                        cmd.Parameters.Add("@Carrera", SqlDbType.VarChar).Value = ListaCarreras.Text;
                         cmd.Parameters.Add("@Contraseña", SqlDbType.VarChar).Value = tbcont.Text;
                         cmd.Parameters.Add("@Patron", SqlDbType.VarChar).Value = patron;
                         cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value = 0;

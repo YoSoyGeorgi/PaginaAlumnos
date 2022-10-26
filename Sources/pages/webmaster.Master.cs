@@ -12,7 +12,7 @@ namespace PaginaAlumnos.Sources.pages
 {
     public partial class webmaster : System.Web.UI.MasterPage
     {
-
+        
         readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,16 +28,16 @@ namespace PaginaAlumnos.Sources.pages
                         con.Open();
                         SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                         dr.Read();
-                        this.lblUser.Text = "Hola " + dr["Nombres"].ToString() +' '+ dr["Apellidos"].ToString();
+                        this.lblUser.Text = "Hola " + dr["Nombres"].ToString() + ' ' + dr["Apellidos"].ToString();
                     }
                 }
             }
             else
             {
                 Response.Redirect("Login.aspx");
-            } 
+            }
         }
-        
+
         protected void Inicio(object sender, EventArgs e)
         {
             Response.Redirect("index.aspx");
@@ -57,6 +57,7 @@ namespace PaginaAlumnos.Sources.pages
         {
             Session.Remove("UsuarioIngresado");
             Response.Redirect("Login.aspx");
-        }
+        } 
+
     }
 }

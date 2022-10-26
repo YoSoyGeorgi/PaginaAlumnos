@@ -51,6 +51,24 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.TextBox tbDir;
 
         /// <summary>
+        /// Control label6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label6;
+
+        /// <summary>
+        /// Control tbcp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbcp;
+
+        /// <summary>
         /// Control label3.
         /// </summary>
         /// <remarks>
@@ -78,13 +96,31 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.Label label4;
 
         /// <summary>
-        /// Control Ficha.
+        /// Control FormaPago.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload Ficha;
+        protected global::System.Web.UI.WebControls.DropDownList FormaPago;
+
+        /// <summary>
+        /// Control label5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label5;
+
+        /// <summary>
+        /// Control motivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList motivo;
 
         /// <summary>
         /// Control lblerror.

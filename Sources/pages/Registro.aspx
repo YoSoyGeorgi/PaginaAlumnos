@@ -19,7 +19,7 @@
                         <asp:Label runat="server" CssClass="row justify-content-center h3">Registro</asp:Label>
                     </div>
                     <fieldset>
-                        <legend class="row justify-content-center"> Datos personales</legend>
+                        <legend class="row justify-content-center">Datos personales</legend>
                         <div class="input-group">
                             <asp:Label ID="label1" CssClass="form-control" runat="server" Text="Nombre:"></asp:Label>
                             <asp:TextBox ID="tbNombre" CssClass="form-control" runat="server" placeholder="Nombre"></asp:TextBox>
@@ -31,30 +31,13 @@
                         </div>
                         <br/>
                         <div class="input-group">
-                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="Número de control:"></asp:Label>
+                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="RFC:"></asp:Label>
                             <asp:TextBox ID="tbnum" CssClass="form-control" runat="server" placeholder="ej. 17140321"></asp:TextBox>
                         </div>
                         <br/>
                         <div class="input-group">
                             <asp:Label ID="label4" CssClass="form-control" runat="server" Text="Correo Electrónico:"></asp:Label>
                             <asp:TextBox ID="tbemail" CssClass="form-control" runat="server" placeholder="ej. patata@hotmail.com"></asp:TextBox>
-                        </div>
-                        <br/>
-                        <div class="input-group">
-                            <asp:Label ID="label5" CssClass="form-control" runat="server" Text="Carrera:"></asp:Label>
-                            <asp:DropDownList ID="ListaCarreras" runat="server">
-                                <asp:ListItem align="center">Seleccione</asp:ListItem>
-                                <asp:ListItem>Ing. Sistemas Computacionales</asp:ListItem>
-                                <asp:ListItem>Ing. Mecatronica</asp:ListItem>
-                                <asp:ListItem>Ing. Mecanica</asp:ListItem>
-                                <asp:ListItem>Ing. Materiales</asp:ListItem>
-                                <asp:ListItem>Ing. Electrica</asp:ListItem>
-                                <asp:ListItem>Ing. Electronica</asp:ListItem>
-                                <asp:ListItem>Ing. Gestión Empresarial</asp:ListItem>
-                                <asp:ListItem>Ing. Logistica</asp:ListItem>
-                                <asp:ListItem>Ing. Industrial</asp:ListItem>
-                                <asp:ListItem>Arquitectura</asp:ListItem>
-                            </asp:DropDownList>
                         </div>
                         <br/>
                         <div class="input-group">
@@ -71,9 +54,9 @@
                     <asp:Label runat="server" CssClass="alert-danger" ID="lblerror"></asp:Label>
                     <br/>
                     <div class="row">
-                        <asp:Button runat="server" CssClass="form-control btn btn-success" BackColor="#EC8013" BorderColor="#EC8013" Text="Completar Registro" OnClick="Registrar"/>
+                        <asp:Button runat="server" CssClass="form-control btn btn-success" BackColor="#05ACD8" BorderColor="#ffffff" Text="Completar Registro" OnClick="Registrar"/>
                         <hr />
-                        <asp:Button runat="server" CssClass="form-control btn btn-warning" BackColor="#EC8013" BorderColor="#EC8013" Text="Cancelar" OnClick="Cancelar" />
+                        <asp:Button runat="server" CssClass="form-control btn btn-success" BackColor="#05ACD8" BorderColor="#ffffff" Text="Cancelar" OnClick="Cancelar" ForeColor="White" />
                     </div>
                 </div>
             </div>

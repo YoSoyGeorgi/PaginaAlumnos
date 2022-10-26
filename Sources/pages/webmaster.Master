@@ -23,7 +23,7 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="/Sources/pages/index.aspx">
-                                <asp:Image runat="server" Height="40" src="../images/logo ITQ original.png" />
+                                <asp:Image runat="server" Height="50" src="../images/logo.jpg" />
                             </a>
                         </div>
                     </div>
