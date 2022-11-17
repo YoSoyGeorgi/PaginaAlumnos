@@ -33,7 +33,7 @@
             </div>
             <br />
             <div class="input-group">
-                <asp:TextBox runat="server" CssClass="form-control" placeholder="RFC" required="required" ID="tbnumcon"></asp:TextBox>
+                <asp:TextBox runat="server" CssClass="form-control" placeholder="Correo Electrónico" required="required" ID="tbemail"></asp:TextBox>
             </div>
             <br />
             <div class="input-group">

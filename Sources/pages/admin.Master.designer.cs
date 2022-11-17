@@ -11,52 +11,52 @@ namespace PaginaAlumnos.Sources.Pages
 {
 
 
-    public partial class Historial
+    public partial class admin
     {
 
         /// <summary>
-        /// Control Historial_Usuarios.
+        /// Control title.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Historial_Usuarios;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder title;
 
         /// <summary>
-        /// Control tabla.
+        /// Control head.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable tabla;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// Control lbfolio.
+        /// Control MP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbfolio;
+        protected global::System.Web.UI.HtmlControls.HtmlForm MP;
 
         /// <summary>
-        /// Control lbRFC.
+        /// Control lbadmin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbRFC;
+        protected global::System.Web.UI.WebControls.Label lbadmin;
 
         /// <summary>
-        /// Control lbstat.
+        /// Control ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbstat;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
     }
 }

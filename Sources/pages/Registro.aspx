@@ -31,8 +31,8 @@
                         </div>
                         <br/>
                         <div class="input-group">
-                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="RFC:"></asp:Label>
-                            <asp:TextBox ID="tbnum" CssClass="form-control" runat="server" placeholder="ej. 17140321"></asp:TextBox>
+                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="Tel. Cel:"></asp:Label>
+                            <asp:TextBox ID="tbnum" CssClass="form-control" runat="server" placeholder="ej. 4271231234"></asp:TextBox>
                         </div>
                         <br/>
                         <div class="input-group">

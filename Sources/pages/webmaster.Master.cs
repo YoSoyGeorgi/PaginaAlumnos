@@ -36,6 +36,8 @@ namespace PaginaAlumnos.Sources.pages
             {
                 Response.Redirect("Login.aspx");
             }
+
+            
         }
 
         protected void Inicio(object sender, EventArgs e)

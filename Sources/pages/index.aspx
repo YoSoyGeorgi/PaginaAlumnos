@@ -6,51 +6,81 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container d-flex justify-content-center">
-            <div class="col-8">
+            <div class="col-14">
                 <div class="form-control card card-body">
                     <div class="row justify-content-center">
                         <asp:Label runat="server" CssClass="row justify-content-center h3">Facturación</asp:Label>
                     </div>
                     <fieldset>
-                        <legend class="row justify-content-center">Ingresa tus datos fiscales.</legend>
+                        <asp:Label runat="server" Cssclass="row justify-content-center h5">Ingresa tus datos fiscales.</asp:Label>
                         <div class="input-group">
                             <asp:Label ID="label1" CssClass="form-control" runat="server" Text="RFC:"></asp:Label>
                             <asp:TextBox ID="tbRFC" CssClass="form-control" runat="server" placeholder="RFC"></asp:TextBox>
                         </div>
                         <br/>
                         <div class="input-group">
+                            <asp:Label ID="label5" CssClass="form-control" runat="server" Text="Razón Social:"></asp:Label>
+                            <asp:DropDownList ID="lbrs" runat="server">
+                                <asp:ListItem align="center">Seleccione</asp:ListItem>
+                                <asp:ListItem>Persona física</asp:ListItem>
+                                <asp:ListItem>Moral</asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="Nombre de la Razón social:"></asp:Label>
+                            <asp:TextBox ID="tbnrs" CssClass="form-control" runat="server" placeholder="Nombre"></asp:TextBox>
+                        </div>
+                        <br/>
+                        <div class="input-group">
                             <asp:Label ID="label2" CssClass="form-control" runat="server" Text="Dirección:"></asp:Label>
-                            <asp:TextBox ID="tbDir" CssClass="form-control" runat="server" placeholder="Dirección"></asp:TextBox>
-                        </div> 
-                        <br />
+                            <asp:TextBox ID="tbdir" CssClass="form-control" runat="server" placeholder="Dirección"></asp:TextBox>
+                        </div>
+                        <br/>
                         <div class="input-group">
                             <asp:Label ID="label6" CssClass="form-control" runat="server" Text="Código Postal:"></asp:Label>
-                            <asp:TextBox ID="tbcp" CssClass="form-control" runat="server" placeholder="C.P."></asp:TextBox>
-                        </div> 
-                        <br/>
-                        <div class="input-group">
-                            <asp:Label ID="label3" CssClass="form-control" runat="server" Text="Recibo de pago:"></asp:Label>
-                            <asp:FileUpload ID="ticket" runat="server" />
+                            <asp:TextBox ID="tbcp" CssClass="form-control" runat="server" placeholder="CP"></asp:TextBox>
                         </div>
                         <br/>
                         <div class="input-group">
-                            <asp:Label ID="label4" CssClass="form-control" runat="server" Text="Forma de Pago:"></asp:Label>
-                            <asp:DropDownList ID="FormaPago" runat="server">
+                            <asp:Label ID="label7" CssClass="form-control" runat="server" Text="Ciudad:"></asp:Label>
+                            <asp:TextBox ID="tbciudad" CssClass="form-control" runat="server" placeholder="Ciudad"></asp:TextBox>
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <asp:Label ID="label8" CssClass="form-control" runat="server" Text="Estado:"></asp:Label>
+                            <asp:TextBox ID="tbestado" CssClass="form-control" runat="server" placeholder="Estado"></asp:TextBox>
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <asp:Label ID="label9" CssClass="form-control" runat="server" Text="Teléfono:"></asp:Label>
+                            <asp:TextBox ID="tbcel" CssClass="form-control" runat="server" placeholder="Teléfono"></asp:TextBox>
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <asp:Label ID="label10" CssClass="form-control" runat="server" Text="Correo:"></asp:Label>
+                            <asp:TextBox ID="tbcorreo" CssClass="form-control" runat="server" placeholder="Correo"></asp:TextBox>
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <asp:Label ID="label4" CssClass="form-control" runat="server" Text="Concepto:"></asp:Label>
+                            <asp:DropDownList ID="lbconcepto" runat="server">
                                 <asp:ListItem align="center">Seleccione</asp:ListItem>
-                                <asp:ListItem>Efectivo</asp:ListItem>
-                                <asp:ListItem>Tarjeta</asp:ListItem>
+                                <asp:ListItem>Adquisición de mercancias</asp:ListItem>
+                                <asp:ListItem>Gastos en general</asp:ListItem>
+                                <asp:ListItem>Equipo de computo y accesorios</asp:ListItem>
+                                <asp:ListItem>Comunicaciones teléfonicas</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <br/>
                         <div class="input-group">
-                            <asp:Label ID="label5" CssClass="form-control" runat="server" Text="Motivo:"></asp:Label>
-                            <asp:DropDownList ID="motivo" runat="server">
-                                <asp:ListItem align="center">Seleccione</asp:ListItem>
-                                <asp:ListItem>Accesorios y tecnología</asp:ListItem>
-                                <asp:ListItem>Telefonía</asp:ListItem>
-                            </asp:DropDownList>
+                            <asp:Label ID="label11" CssClass="form-control text-center" runat="server" Text="Recibo de pago"></asp:Label>
                         </div>
                         <br/>
+                        <div class="input-group">
+                            <asp:FileUpload ID="ticket" CssClass="form-control form-control-sm" runat="server" />
+                        </div>
+                        
                     </fieldset>
                     <br/>
                     <asp:Label runat="server" CssClass="alert-danger" ID="lblerror"></asp:Label>
@@ -61,5 +91,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
 </asp:Content>

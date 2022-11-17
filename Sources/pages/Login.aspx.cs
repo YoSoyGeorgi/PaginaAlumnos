@@ -26,7 +26,7 @@ namespace PaginaAlumnos.Sources.pages
 
         protected void Iniciar_Click(object sender, EventArgs e)
         {
-            if (tbnumcon.Text == "" || tbpass.Text == "")
+            if (tbemail.Text == "" || tbpass.Text == "")
             {
                 lblError.Text = "Por favor ingresa tu número de control o contraseña";
             }
@@ -38,7 +38,7 @@ namespace PaginaAlumnos.Sources.pages
                     using (SqlCommand cmd = new SqlCommand("Validar", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@Num_Control", SqlDbType.VarChar).Value = tbnumcon.Text;
+                        cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = tbemail.Text;
                         cmd.Parameters.Add("@Contraseña", SqlDbType.VarChar).Value = tbpass.Text;
                         cmd.Parameters.Add("@Patron", SqlDbType.VarChar).Value = patron;
                         con.Open();

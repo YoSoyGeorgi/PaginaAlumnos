@@ -33,6 +33,42 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.TextBox tbRFC;
 
         /// <summary>
+        /// Control label5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label5;
+
+        /// <summary>
+        /// Control lbrs.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList lbrs;
+
+        /// <summary>
+        /// Control label3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label3;
+
+        /// <summary>
+        /// Control tbnrs.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbnrs;
+
+        /// <summary>
         /// Control label2.
         /// </summary>
         /// <remarks>
@@ -42,13 +78,13 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.Label label2;
 
         /// <summary>
-        /// Control tbDir.
+        /// Control tbdir.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbDir;
+        protected global::System.Web.UI.WebControls.TextBox tbdir;
 
         /// <summary>
         /// Control label6.
@@ -69,22 +105,76 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.TextBox tbcp;
 
         /// <summary>
-        /// Control label3.
+        /// Control label7.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label3;
+        protected global::System.Web.UI.WebControls.Label label7;
 
         /// <summary>
-        /// Control ticket.
+        /// Control tbciudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload ticket;
+        protected global::System.Web.UI.WebControls.TextBox tbciudad;
+
+        /// <summary>
+        /// Control label8.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label8;
+
+        /// <summary>
+        /// Control tbestado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbestado;
+
+        /// <summary>
+        /// Control label9.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label9;
+
+        /// <summary>
+        /// Control tbcel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbcel;
+
+        /// <summary>
+        /// Control label10.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label10;
+
+        /// <summary>
+        /// Control tbcorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbcorreo;
 
         /// <summary>
         /// Control label4.
@@ -96,31 +186,31 @@ namespace PaginaAlumnos.Sources.pages
         protected global::System.Web.UI.WebControls.Label label4;
 
         /// <summary>
-        /// Control FormaPago.
+        /// Control lbconcepto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList FormaPago;
+        protected global::System.Web.UI.WebControls.DropDownList lbconcepto;
 
         /// <summary>
-        /// Control label5.
+        /// Control label11.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label5;
+        protected global::System.Web.UI.WebControls.Label label11;
 
         /// <summary>
-        /// Control motivo.
+        /// Control ticket.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList motivo;
+        protected global::System.Web.UI.WebControls.FileUpload ticket;
 
         /// <summary>
         /// Control lblerror.

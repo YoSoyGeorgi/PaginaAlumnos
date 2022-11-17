@@ -35,7 +35,7 @@ namespace PaginaAlumnos.Sources.Pages
                     {
                         this.tbNombres.Text = dr["Nombres"].ToString();
                         this.tbApellidos.Text = dr["Apellidos"].ToString();
-                        this.tbUsuario.Text = dr["Num_control"].ToString();
+                        this.tbUsuario.Text = dr["Email"].ToString();
                         dr.Close();
                     }
                     con.Close();
@@ -121,7 +121,7 @@ namespace PaginaAlumnos.Sources.Pages
                     {
                         using (SqlCommand cmd = new SqlCommand("CambiarContraseña", con))
                         {
-                            string patron = "InfoToolsSV";
+                            string patron = "contrasenialumno";
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.Add("@id", SqlDbType.Int).Value = Id;
                             cmd.Parameters.Add("@Contraseña", SqlDbType.VarChar).Value = tbClave.Text;

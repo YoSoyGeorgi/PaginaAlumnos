@@ -36,7 +36,7 @@ namespace PaginaAlumnos.Sources.pages
             {
                 CommandType = CommandType.StoredProcedure
             };
-            usuario.Parameters.Add("@usuario", SqlDbType.VarChar).Value = tbnum.Text;
+            usuario.Parameters.Add("@usuario", SqlDbType.VarChar).Value = tbemail.Text;
             int user = Convert.ToInt32(usuario.ExecuteScalar());
 
             if (tbNombre.Text == "" || tbapp.Text == "" || tbnum.Text == "" || tbemail.Text == "")
@@ -73,7 +73,7 @@ namespace PaginaAlumnos.Sources.pages
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add("@Nombres", SqlDbType.VarChar).Value = tbNombre.Text;
                         cmd.Parameters.Add("@Apellidos", SqlDbType.VarChar).Value = tbapp.Text;
-                        cmd.Parameters.Add("@Num_control", SqlDbType.Char).Value = tbnum.Text;
+                        cmd.Parameters.Add("@Telefono", SqlDbType.Char).Value = tbnum.Text;
                         cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = tbemail.Text;
                         cmd.Parameters.Add("@Contraseña", SqlDbType.VarChar).Value = tbcont.Text;
                         cmd.Parameters.Add("@Patron", SqlDbType.VarChar).Value = patron;

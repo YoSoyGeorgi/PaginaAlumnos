@@ -26,15 +26,37 @@ namespace PaginaAlumnos.Sources.pages
             byte[] imagen = ticket.FileBytes;
             using (con)
             {
-                using (SqlCommand cmd = new SqlCommand("registrar_factura", con))
+                using (SqlCommand cmd = new SqlCommand("Registrar_factura", con))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@rfc", SqlDbType.VarChar).Value = tbRFC.Text;
-                    cmd.Parameters.Add("@direccion", SqlDbType.VarChar).Value = tbDir.Text;
-                    cmd.Parameters.Add("@cp", SqlDbType.VarChar).Value = tbcp.Text;
-                    cmd.Parameters.Add("@forma_pago", SqlDbType.VarChar).Value = FormaPago.Text;
-                    cmd.Parameters.Add("@imagen", SqlDbType.Image).Value = imagen;
-                    cmd.Parameters.Add("@razon", SqlDbType.VarChar).Value = motivo.Text;
+                    cmd.Parameters.Add("@RFC", SqlDbType.VarChar).Value = tbRFC.Text;
+                    cmd.Parameters.Add("@Razon_social", SqlDbType.VarChar).Value = lbrs.Text;
+                    cmd.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = tbnrs.Text;
+                    cmd.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = tbdir.Text;
+                    cmd.Parameters.Add("@CP", SqlDbType.VarChar).Value = tbcp.Text;
+                    cmd.Parameters.Add("@Ciudad", SqlDbType.VarChar).Value = tbciudad.Text;
+                    cmd.Parameters.Add("@Estado", SqlDbType.VarChar).Value = tbestado.Text;
+                    cmd.Parameters.Add("@Telefono", SqlDbType.VarChar).Value = tbcel.Text;
+                    cmd.Parameters.Add("@Correo", SqlDbType.VarChar).Value = tbcorreo.Text;
+                    cmd.Parameters.Add("@Concepto", SqlDbType.VarChar).Value = lbconcepto.Text;
+                    cmd.Parameters.Add("@Imgen", SqlDbType.Image).Value = imagen;
+                    cmd.Parameters.Add("@zip", SqlDbType.VarBinary).Value = null;
+                    cmd.Parameters.Add("@Estatus", SqlDbType.VarChar).Value = "Pendiente";
+
+                    Id = int.Parse(Session["UsuarioIngresado"].ToString());
+                    using (SqlCommand cmd1 = new SqlCommand("Perfil", con))
+                    {
+                        cmd1.CommandType = CommandType.StoredProcedure;
+                        cmd1.Parameters.Add("@Id", SqlDbType.Int).Value = Id;
+                        SqlDataReader dr = cmd1.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            cmd.Parameters.Add("@Id_cliente", SqlDbType.Int).Value = dr["Id"].ToString();
+                            dr.Close();
+                        }
+                        
+                    }
+                    
                     cmd.ExecuteNonQuery();
                     con.Close();
 

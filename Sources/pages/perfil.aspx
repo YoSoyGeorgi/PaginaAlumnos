@@ -6,9 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <fieldset class="row-1">
-            <div class="container text-black-50 row">
-                
+        <fieldset class="row">
                 <div class="col-6 row justify-content-center">
                     <div class="align-items-center col-0">
                         <fieldset>
@@ -81,7 +79,7 @@
                         </fieldset>
                     </div>
                 </div>
-            </div>
+
         </fieldset>
         <br />
         <br />

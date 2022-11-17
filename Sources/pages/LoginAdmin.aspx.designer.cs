@@ -11,52 +11,43 @@ namespace PaginaAlumnos.Sources.Pages
 {
 
 
-    public partial class Historial
+    public partial class LoginAdmin
     {
 
         /// <summary>
-        /// Control Historial_Usuarios.
+        /// Control loginadmin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Historial_Usuarios;
+        protected global::System.Web.UI.HtmlControls.HtmlForm loginadmin;
 
         /// <summary>
-        /// Control tabla.
+        /// Control tbusuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable tabla;
+        protected global::System.Web.UI.WebControls.TextBox tbusuario;
 
         /// <summary>
-        /// Control lbfolio.
+        /// Control tbpsadmin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbfolio;
+        protected global::System.Web.UI.WebControls.TextBox tbpsadmin;
 
         /// <summary>
-        /// Control lbRFC.
+        /// Control lblerr.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbRFC;
-
-        /// <summary>
-        /// Control lbstat.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbstat;
+        protected global::System.Web.UI.WebControls.Label lblerr;
     }
 }
